@@ -49,6 +49,8 @@ Route::get('/home', 'HomeController@index');
 
 Route::resource('/noticias', 'NoticiasController');
 
+Route::post('/noticia', 'NoticiasController@store');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
